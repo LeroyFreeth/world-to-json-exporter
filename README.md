@@ -12,11 +12,12 @@ This plugin provides a Blueprint SceneComponent of Type ```JsonExport```. This a
 
 ## How to use
 
-This plugin doesn't have its own content, but needs to be used in other Blueprints.
+This plugin has default exportable components. Uses of these can be found within the demo scene.
 
 ### Creating exportable Blueprints
 
-In order to use this, create a new Blueprint which inherits from ```JsonExport``` and override the function ```GetJson```.
+In addition, these exportable components can be inherited by custom blueprints to export anything.
+In order to do this, create a new Blueprint which inherits from ```JsonExport``` and override the function ```GetJson```.
 This function returns the following:
 - A ```JsonObjectWrapper```, which values are added within this function.
 - An AttributeId/FieldName, which is the FieldName of this JsonObject.
